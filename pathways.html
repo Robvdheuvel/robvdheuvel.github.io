@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathways</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js"></script>
+    <header>
+        <nav class="top_bar">
+            <div>
+                <a href="index.html">
+                    <img src="./Images/home.png" alt="Home Icon" ID="home_button">
+                </a>
+            </div>
+            <nav class="nav_bar">
+                <a href="wip.html">
+                    <h2>Journey</h2>
+                </a>
+                <a href="wip.html">
+                    <h2>About Me</h2>
+                </a>
+            </nav>
+        </nav>
+
+
+
+    </header>
+    <main>
+        <article class="article_box">
+            <div class="article_div">
+                <img src="./Images/Pathways.png" alt="Pathways image" class="article_img">
+            </div>
+            <p class="article_paragraph">
+                The <a href="https://techgrounds.nl/pathways/" style="text-decoration:underline">Pathways</a> program is
+                a 4 week course designed to give
+                an impression of different aspects of IT. The goal is to find which IT jobs fit you and how to get
+                yourself ready for that job. At the end of these 4 weeks, I needed to answer the below 7 questions for
+                myself.
+            </p>
+            <ol ID="pathways_list">
+                <li class="pathways_listitem" ID="pathways_list_1">
+                    <p class="list_paragraph">Which direction do you want to go in or what do you want to specialize
+                        in?</p>
+                    <img src="./Images/chevron-down.png" alt="Chevron down" class="chevron_down"
+                        ID="pathways_chev_down1" onclick="toggle_list(1)">
+                    <img src="./Images/chevron-up.png" alt="Chevron up" class="chevron_up" ID="pathways_chev_up1"
+                        onclick="toggle_list(1)">
+
+                </li>
+                <img src="./Images/programming_languages.png" alt="Programming Languages" class="pathways_list_pictures"
+                    ID="pathways_list_img1">
+                <div>
+                    <p class="pathways_response" ID="response_1">I definitely want to be a developer. I had
+                        this idea in my head even before starting Pathways, but I wanted to get a feel for other fields
+                        of work before making a final choice. Even though I've seen some other interesting fields like
+                        Cyber Security and Cloud Engineering, it's Software Engineering that mostly calls out to me.
+                        There's something about just typing in text and making things happen. Figuring out your options
+                        and making it work. And when something doesn't work, trying to solve the puzzle and figuring
+                        out what went wrong. Heck, I'm doing my final presentation as an actual website instead of a
+                        PowerPoint presentation, so that should say enough. <br><br>
+                        As to my actual specialization, I haven't figured that part out. There's no specific programming
+                        language that I have a preference for, so I guess that mostly comes down to chance. I like the
+                        idea of being a full stack developer and have in depth knowledge of both front-end and back-end.
+                        So I'll just continue to pick up courses I think I need for further development as I go.<br><br>
+                        I do need to give an honorable mention to the Salesforce Trailblazer course. While I'm not
+                        interested in learning Salesforce per se, I do love how they gamified the learning process,
+                        earning badges like you would trophies and achievements in games and working your way up that
+                        way. A modern and playful way of learning. Thumbs up!
+                    </p>
+                </div>
+                <li class="pathways_listitem" ID="pathways_list_2">
+                    <p class="list_paragraph">What trigger during the Pathways program made you decide the above?</p>
+                    <img src="./Images/chevron-down.png" alt="Chevron down" class="chevron_down"
+                        ID="pathways_chev_down2" onclick="toggle_list(2)">
+                    <img src="./Images/chevron-up.png" alt="Chevron up" class="chevron_up" ID="pathways_chev_up2"
+                        onclick="toggle_list(2)">
+                </li>
+                <img src="./Images/trigger.jpg" alt="Trigger" class="pathways_list_pictures" ID="pathways_list_img2">
+                <p class="pathways_response" ID="response_2"> It was the HTML, CSS, JavaScript and Python lessons that I
+                    enjoyed the most. Every time we got an assignment, I was already figuring out what else I could do
+                    and play around with more advanced stuff. I just enjoyed coding and figuring things out. And
+                    even though the lessons were very basic, with the help of Google I found the answers I needed.
+                    That's part of why I decide to do this presentation in website form, just to see if I could.
+                </p>
+                <li class="pathways_listitem" ID="pathways_list_3">
+                    <p class="list_paragraph">What DON'T you want to do?</p>
+                    <img src="./Images/chevron-down.png" alt="Chevron down" class="chevron_down"
+                        ID="pathways_chev_down3" onclick="toggle_list(3)">
+                    <img src="./Images/chevron-up.png" alt="Chevron up" class="chevron_up" ID="pathways_chev_up3"
+                        onclick="toggle_list(3)">
+                </li>
+                <img src="./Images/dontcare.jpg" alt="Not Interested" class="pathways_list_pictures"
+                    ID="pathways_list_img3">
+                <p class="pathways_response" ID="response_3"> I'm definitely not interested in creating websites via
+                    WordPress. I'm not that artistic or visually inclined (hence the mediocre layout of this website)
+                    and it's only the coding aspect of website creation that I like. When we used WordPress to create
+                    websites, I was bored out of my mind. <br><br>
+                    Another thing I didn't particularly like was Data Analytics. It just didn't appeal to me.
+                </p>
+                <li class="pathways_listitem" ID="pathways_list_4">
+                    <p class="list_paragraph">What does your ideal work environment look like in 2 years time?</p>
+                    <img src="./Images/chevron-down.png" alt="Chevron down" class="chevron_down"
+                        ID="pathways_chev_down4" onclick="toggle_list(4)">
+                    <img src="./Images/chevron-up.png" alt="Chevron up" class="chevron_up" ID="pathways_chev_up4"
+                        onclick="toggle_list(4)">
+                </li>
+                <img src="./Images/workplace.webp" alt="Ideal Workplace?" class="pathways_list_pictures"
+                    ID="pathways_list_img4">
+                <p class="pathways_response" ID="response_4"> The ideal work environment, I'm guessing that's more or
+                    less the
+                    same for most people, but here's my version at least. <br><br>
+                    In an ideal world I would work in a workplace where quality and hard work are not only encouraged,
+                    but actually appreciated. Where you get the trust and freedom to do your job and not get
+                    micro-managed. Where an employee is more than a number, and where there is a focus on
+                    keeping people happy and healthy so they can perform at their best. Where colleagues take a genuine
+                    interest in one another and where you can be free to ask for or give help where needed, so you can
+                    learn from each other. That would be the ideal work culture. And I've really enjoyed working with
+                    people from all different kinds of nationalities in the past, so I guess that would the part of the
+                    ideal work environment as well.<br><br>
+                    Besides that, it would be nice to have the chance to keep following your interests. If there's
+                    another direction you want to go in, that you can train yourself and know you can move in that
+                    direction.
+                </p>
+                <li class="pathways_listitem" ID="pathways_list_5">
+                    <p class="list_paragraph">How and what do you want to learn?</p>
+                    <img src="./Images/chevron-down.png" alt="Chevron down" class="chevron_down"
+                        ID="pathways_chev_down5" onclick="toggle_list(5)">
+                    <img src="./Images/chevron-up.png" alt="Chevron up" class="chevron_up" ID="pathways_chev_up5"
+                        onclick="toggle_list(5)">
+                </li>
+                <img src="./Images/learning.jpg" alt="Learning" class="pathways_list_pictures" ID="pathways_list_img5">
+                <p class="pathways_response" ID="response_5"> So, I personally feel this question and the next one
+                    should be swapped around. Cause the WHAT part of what I want to learn are mostly the skills that I'm
+                    missing in my T-shape. As for the HOW part, looking at the way I interpreted the T-Shape question,
+                    I'm mostly missing hard skils. There are multiple ways of learning these. Primarily I will be
+                    doing a 5 month long (9 to 5) school course after Pathways in which I will be learning a lot of new
+                    hard skills. After that I will stasrt working. If I feel like there are still skills that I'm
+                    missing, I will supplement those with online studies.
+                </p>
+                <li class="pathways_listitem" ID="pathways_list_6">
+                    <p class="list_paragraph">What T-Shape skills do you need for that?</p>
+                    <img src="./Images/chevron-down.png" alt="Chevron down" class="chevron_down"
+                        ID="pathways_chev_down6" onclick="toggle_list(6)">
+                    <img src="./Images/chevron-up.png" alt="Chevron up" class="chevron_up" ID="pathways_chev_up6"
+                        onclick="toggle_list(6)">
+                </li>
+                <div ID="pathways_list_img6">
+                    <div class="T_dash">
+                        <p class="learned_skills">Analytical</p>
+                        <p class="learned_skills">Problem solving</p>
+                        <p class="learned_skills">Good Communication</p>
+                        <p class="learned_skills">Customer Focused</p>
+                        <p class="learned_skills">Flexible</p>
+                        <p class="learned_skills">Inquisitive</p>
+                        <p class="learned_skills">Desire to learn</p>
+                        <p class="missing_skills">Scrum</p>
+                        <p class="missing_skills">Git</p>
+                    </div>
+                    <div class="T_I">
+                        <p class="missing_skills">HTML</p>
+                        <p class="missing_skills">CSS</p>
+                        <p class="missing_skills">JavaScript</p>
+                        <p class="missing_skills">Python</p>
+                        <p class="missing_skills">Java</p>
+                        <p class="missing_skills">C#</p>
+                        <p class="missing_skills">.NET</p>
+                        <p class="missing_skills">etc.</p>
+                    </div>
+                </div>
+                <p class="pathways_response" ID="response_6"> So the question what a T-shape for a developer looks like
+                    is hard to answer. You can take it extremely broad and list all the programming languages and also
+                    all the skills of other IT disciplines you narrowly work with. The latter provides a problem in it's
+                    own right, as I have no idea what people I will be working with. Listing this would be of nu use to
+                    me at all, since it's not a realistic goal. These are things that develop over time and if there's a
+                    need to broaden the dash part of the T, I will figure that out in time. <br><br>So instead I chose
+                    to honor the spirit of the exercise, but form my T a bit differently. On the top part of the T, I
+                    listed the skills that are generally asked for in any developer job. So these are not in-depth
+                    knowledge of any specific field, but skills that are either mandatory or good to have.
+                    On the I part of the T-shape are the skills that are more in-depth. These vary from job to job, so
+                    while one job would require HTML, CSS and JavaScript, another might need Python or Java. <br><br>
+                    In <span class="green_text">green</span> I have listed the skills I already have. In <span
+                        class="red_text">red</span> are the skills I still need and which I am
+                    going to focus on. Note that as mentioned earlier, I will focus only on some of the skills in the I
+                    part, as not all are relevant to all jobs.
+                </p>
+                <li class="pathways_listitem" ID="pathways_list_7">
+                    <p class="list_paragraph">What is your first next step after Pathways?</p>
+                    <img src="./Images/chevron-down.png" alt="Chevron down" class="chevron_down"
+                        ID="pathways_chev_down7" onclick="toggle_list(7)">
+                    <img src="./Images/chevron-up.png" alt="Chevron up" class="chevron_up" ID="pathways_chev_up7"
+                        onclick="toggle_list(7)">
+                </li>
+                <img src="./Images/fontys-logo-purple-nl.png" alt="Fontys logo" class="pathways_list_pictures"
+                    ID="pathways_list_img7">
+                <p class="pathways_response" ID="response_7"> To the question what's next, you might have already seen
+                    the answer on the front page. I've already decided I want to take part in Make IT Work program for
+                    Software Engineering. So the first step will be to take part in the assessment. Afterwards I'll need
+                    to find my next employer, as they will have to sponsor a bit part of the eduction costs. So exciting
+                    times ahead!
+                </p>
+
+            </ol>
+        </article>
+    </main>
+
+</body>
+
+</html>

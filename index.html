@@ -1,7 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Road to IT</title>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js"></script>
+    <header>
+        <nav class="top_bar">
+            <div>
+                <a href="index.html">
+                    <img src="./Images/home.png" alt="Home Icon" ID="home_button">
+                </a>
+            </div>
+            <nav class="nav_bar">
+                <a href="wip.html">
+                    <h2>Journey</h2>
+                </a>
+                <a href="wip.html">
+                    <h2>About Me</h2>
+                </a>
+            </nav>
+        </nav>
+
+
+
+    </header>
+    <main>
+        <h1 class="main_title">My road to IT</h1>
+        <img src="./Images/path.png" alt="Path picture" ID="path_home">
+        <div class="main_paragraph_div">
+            <h2 class="main_paragraph">In May 2022 I started my journey to IT. This website was created as a playful way
+                to put into practice the information I learned during my orientation that month and have some fun with
+                the basics of HTML, CSS and JavaScript.
+            </h2>
+        </div>
+
+        <div ID="journey_flexbox">
+            <div ID="pathways_div">
+                <a href="pathways.html">
+                    <img src="./Images/Pathways.png" alt="Pathways Logo" class="journey_img">
+                </a>
+            </div>
+            <div ID="makeitwork_div">
+                <a href="wip.html">
+                    <img src="./Images/makeitwork.jpg" alt="Make IT Work logo" class="journey_img">
+                </a>
+            </div>
+
+        </div>
+        <h1 class="sub_title" id="journey_start">Start of a journey</h1>
+
+        <script>
+
+            const minute = 1000 * 60;
+            const hour = minute * 60;
+            const day = hour * 24;
+            const start_date = new Date(2022, 4, 2, 9);
+            let current_date = new Date();
+            let difference = current_date - start_date;
+            let days_since_start = Math.floor(difference / day);
+            let hours_since_start = Math.round((difference - (days_since_start * day)) / hour);
+
+            document.getElementById("journey_start").innerHTML = days_since_start + " days and " + hours_since_start + " hours since the start of this journey";
+        </script>
+    </main>
+
 </body>
+
 </html>
